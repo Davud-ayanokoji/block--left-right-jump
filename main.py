@@ -29,9 +29,9 @@ if not success:
     pygame.quit()
     sys.exit()
 
-# Show win screen
 show_transition(screen, "Stage 2 Complete")
 wait_for_quit(screen, clock)
 pygame.quit()
 sys.exit()
+
 
