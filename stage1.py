@@ -11,7 +11,6 @@ def generate_platforms():
     platforms = []
     previous_gap_x = None
 
-    # Ground floor
     ground_y = HEIGHT - 40
     ground_platform = pygame.Rect(0, ground_y, WIDTH, PLATFORM_HEIGHT)
     platforms.append(ground_platform)
@@ -70,3 +69,4 @@ def run_stage(screen, clock, player, platforms, flag):
         draw(screen, player, platforms, flag)
 
     return False, player
+
