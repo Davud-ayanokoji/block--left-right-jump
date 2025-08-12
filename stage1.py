@@ -35,7 +35,6 @@ def generate_platforms():
             highest_left_platform = left_platform
             highest_right_platform = right_platform
 
-    # Place flag
     flag_platform = highest_left_platform if highest_left_platform.width >= highest_right_platform.width else highest_right_platform
     flag_x = flag_platform.centerx - FLAG_SIZE // 2
     flag_y = flag_platform.top - FLAG_SIZE
@@ -68,5 +67,6 @@ def run_stage(screen, clock, player, platforms, flag):
         draw(screen, player, platforms, flag)
 
     return False, player
+
 
 
