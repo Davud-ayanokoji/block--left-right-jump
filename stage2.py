@@ -15,7 +15,6 @@ def generate_platforms():
     ground_platform = pygame.Rect(0, ground_y, WIDTH, PLATFORM_HEIGHT)
     platforms.append(ground_platform)
 
-    # Upper floors
     highest_left_platform = None
     highest_right_platform = None
     for i in range(1, FLOORS):
@@ -69,4 +68,5 @@ def run_stage(screen, clock, player, platforms, flag):
         draw(screen, player, platforms, flag)
 
     return False, player
+
 
