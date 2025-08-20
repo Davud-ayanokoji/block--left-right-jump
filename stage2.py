@@ -60,13 +60,14 @@ def run_stage(screen, clock, player, platforms, flag):
         vel_y, on_ground = handle_collisions(
             player, platforms, vel_y, prev_bottom, on_ground)
 
-        # Win
+    
         if player.colliderect(flag):
             return True, player
 
         draw(screen, player, platforms, flag)
 
     return False, player
+
 
 
 
