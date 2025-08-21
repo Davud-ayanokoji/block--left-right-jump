@@ -2,7 +2,6 @@ import pygame
 import random
 from game_utils import WIDTH, HEIGHT, PLATFORM_HEIGHT, PLAYER_SIZE, PLAYER_SPEED, JUMP_VELOCITY, GRAVITY, FLAG_SIZE, create_player, handle_movement, handle_collisions, draw
 
-
 def generate_platforms():
     FLOORS = 15
     GAP_WIDTH = 150
@@ -42,7 +41,6 @@ def generate_platforms():
 
     return platforms, flag
 
-
 def run_stage(screen, clock, player, platforms, flag):
     vel_y = 0
     on_ground = False
@@ -67,6 +65,7 @@ def run_stage(screen, clock, player, platforms, flag):
         draw(screen, player, platforms, flag)
 
     return False, player
+
 
 
 
