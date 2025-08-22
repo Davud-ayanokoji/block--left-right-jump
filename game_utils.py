@@ -1,6 +1,6 @@
 import pygame
 
-# Configuration
+# Configura
 WIDTH, HEIGHT = 640, 720
 PLATFORM_HEIGHT = 10
 PLAYER_SIZE = 30
@@ -92,3 +92,4 @@ def wait_for_quit(screen, clock):
             if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
                 waiting = False
         clock.tick(30)
+
