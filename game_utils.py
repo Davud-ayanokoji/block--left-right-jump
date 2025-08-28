@@ -17,7 +17,6 @@ def create_player():
 
 
 def handle_movement(player, keys, vel_y, on_ground):
-    #
     if keys[pygame.K_LEFT] or keys[pygame.K_a]:
         player.x -= PLAYER_SPEED
     if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
@@ -91,6 +90,7 @@ def wait_for_quit(screen, clock):
             if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
                 waiting = False
         clock.tick(30)
+
 
 
 
